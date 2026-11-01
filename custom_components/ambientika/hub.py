@@ -67,7 +67,7 @@ class AmbientikaHub(DataUpdateCoordinator[dict[str, DeviceStatus | None]]):
             hass=hass,
             logger=LOGGER,
             name=DOMAIN,
-            update_interval=timedelta(minutes=5),
+            update_interval=timedelta(minutes=1),
         )
 
     async def login(self) -> None:
